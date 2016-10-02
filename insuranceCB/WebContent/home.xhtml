@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"  
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+      
+       
+<h:head>
+	<link rel="shortcut icon" type="image/x-icon" href="resources/images/logo2.jpg" />
+    <title>Welcome to A&amp;I</title>
+	<link rel="stylesheet" href="resources/css/style.css" type="text/css" media="all" />
+	<script type="text/javascript">
+		function changeImg(who,flag) {
+		  if (flag) {
+			who.style.height='40px';  
+				who.style.width='40px';
+		  } else {
+			who.style.height='20px';  
+				who.style.width='20px';
+		  }
+		}
+	</script>
+	</h:head>
+	<h:body>
+		<div class="wrapper"> 
+			<div class="container">
+				<div class="header">
+					<div class="logo">
+						<h1><a href="index.xhtml">Auction &amp; Insurance</a><span>Insure, to be sure!</span></h1>
+					</div>
+					<div class="header_nav" >
+						<ul>
+						  <li><a href="home.xhtml"><h:graphicImage width="20" height="20" value="resources/images/home.png" onmouseover="changeImg(this,true);" onmouseout="changeImg(this,false);"  />Home</a></li>
+						  <li><a href="#"><img width="20" height="20" src="resources/images/message.jpg" onmouseover="changeImg(this,true);" onmouseout="changeImg(this,false);"  />Messages</a></li>
+						  <li><a href="#"><img width="20" height="20" src="resources/images/aboutus.jpg" onmouseover="changeImg(this,true)" onmouseout="changeImg(this,false)"  />AboutUs</a></li>
+						  <li><a href="#"><img width="20" height="20" src="resources/images/contactus.jpg" onmouseover="changeImg(this,true);" onmouseout="changeImg(this,false);"  />Contact Us</a></li>
+						  <li><a href="#"><img width="20" height="20" src="resources/images/faq.jpg" onmouseover="changeImg(this,true);" onmouseout="changeImg(this,false);"  />FAQ</a></li>
+						  <li><a href="#"><img width="20" height="20" src="resources/images/logout.png" onmouseover="changeImg(this,true);" onmouseout="changeImg(this,false);"  />Logout</a></li>
+						</ul>
+					</div>
+				</div>
+				<p:tabView>
+					<p:tab title="Profile" >
+						<h:form enctype="multipart/form-data" >
+							
+							<p:panelGrid   style="margin: 0 auto">
+							<f:facet name="header">
+								<p:row>
+								
+							            <p:column colspan="7"><strong>User Info</strong></p:column>   
+						        </p:row>			
+							</f:facet>
+								<p:row >  
+									<p:column style="width: 50px">
+										<strong><h:outputText value="User Name:" /></strong>
+									</p:column>
+									<p:column style="width: 50px">
+										<h:outputText value="CodeBros" />
+									</p:column>
+								</p:row>	
+									<p:row >  
+									<p:column style="width: 50px">
+										<strong><h:outputText value="Email:" /></strong>
+									</p:column>
+									<p:column style="width: 50px">
+										<h:outputText value="codebros@gmail.com" />
+									</p:column>
+								</p:row>	
+								<p:row> 
+									<p:column style="width: 50px">
+										<h:graphicImage width="55" height="55" value="resources/images/Car-icon.png"/>
+									</p:column>
+									<p:column style="width: 50px">
+									<strong>	<h:outputText value="Size: " /></strong>
+												<h:outputText value= "8000cc" />
+										<br/>
+									<strong><h:outputText value="Distance: " /></strong>
+												<h:outputText value=" 25000km" />
+									</p:column>
+									<p:column style="width: 50px">
+										 <h:panelGroup rendered = "#{user.seecheck() == false}">
+										<h:graphicImage width="55" height="55" value="resources/images/markx.png"/>
+										</h:panelGroup>
+										 <h:panelGroup rendered = "#{user.seecheck() == true}">
+										<h:graphicImage width="55" height="55" value="resources/images/yes.png"/>
+										</h:panelGroup>
+									</p:column>
+								</p:row>	
+								<p:row> 
+									<p:column style="width: 50px">
+										<h:graphicImage width="70" height="70" value="resources/images/moto.jpg"/>
+									</p:column>
+									<p:column style="width: 50px">
+									<strong>	<h:outputText value="Size: " /></strong>
+												<h:outputText value= "2000cc" />
+										<br/>
+									<strong><h:outputText value="Distance: " /></strong>
+												<h:outputText value=" 10000km" />
+									</p:column>
+									<p:column style="width: 50px">
+										<h:graphicImage width="55" height="55" value="resources/images/markx.png"/>
+									</p:column>
+								</p:row>
+								<p:row> 
+									<p:column style="width: 50px">
+										<h:graphicImage width="55" height="55" value="resources/images/doctor-icon.png"/>
+									</p:column>
+									<p:column style="width: 50px">
+									<strong>	<h:outputText value="Age: " /></strong>
+												<h:outputText value= "43    " />
+									<strong><h:outputText value="Sex: " /></strong>
+												<h:outputText value= "Male" />			
+										<br/>
+									<strong><h:outputText value="Familly Status: " /></strong>
+												<h:outputText value="Married, father of 2 children" />
+									</p:column>
+									<p:column style="width: 50px">
+										<h:graphicImage width="55" height="55" value="resources/images/markx.png"/>
+									</p:column>
+								</p:row>
+								<p:row> 
+									<p:column style="width: 50px">
+										<h:graphicImage width="55" height="55" value="resources/images/house.png"/>
+									</p:column>
+									<p:column style="width: 50px">
+									<strong>	<h:outputText value="Built Year: " /></strong>
+												<h:outputText value= "2004    " />
+									<strong><h:outputText value="Size: " /></strong>
+												<h:outputText value= "150m" />&sup2;	
+										<br/>
+									</p:column>
+									<p:column style="width: 50px">
+										<h:graphicImage width="55" height="55" value="resources/images/yes.png"/>
+									</p:column>
+								</p:row>
+							</p:panelGrid>	
+						</h:form> 
+					</p:tab>
+					<p:tab title="More Insurance"  >
+						<h:form enctype="multipart/form-data"  id="form">
+							<table>
+								<tr><td><b>Product's name:</b></td>
+								<td><p:inputText id="name" required="true"  />  </td></tr>
+            
+								<tr><td><b>Categories:</b></td>
+								<td> <p:selectCheckboxMenu id="menu" label="Car"   panelStyle="width:250px">
+										<f:selectItems value="Car" />
+								</p:selectCheckboxMenu> </td></tr>         
+								<tr><td><b>Size:</b></td>
+								<td><p:inputText id="size" />  </td></tr>
+            
+								<tr><td><b>Distance:</b></td>
+								<td><p:inputText id="distance"/>  </td></tr>
+								
+								<tr><td><b>Desirable Price:</b></td>
+								<td><p:inputText id="disire"/>  </td></tr>
+            
+							
+								<tr><td></td><td> 
+									<h:commandButton id="create1" class="buttons buttons1" value="Create"   />
+								</td></tr>
+							</table>
+						</h:form>
+					</p:tab>
+					<p:tab title="Insurance Bids" >
+						<h:form enctype="multipart/form-data" >
+						 <h:panelGroup rendered = "#{user.seecheck() == false}">
+							<p:panelGrid columns="2"   style="margin: 0 auto">	
+							<f:facet name="header">
+								<p:row>
+								<p:column colspan="7"><strong>Car Insurance</strong></p:column>   
+						        </p:row>			
+							</f:facet>
+								
+						      <h:outputText value="Insurance Type" />			
+								<h:graphicImage value="resources/images/Car-icon.png"   style="width:100px; height:100px;"/>
+								
+							  <h:outputText value="Provider Company: " />
+							    <h:outputText value="CompanyA" />
+							 
+							   <h:outputText value="Best Bid: " />
+							    <h:outputText value="#{user.Bidder()}" />
+							    <h:outputText value="Desicion: " />
+							      
+							     <p:commandButton styleClass="buttons buttons1"  value="DEAL!"  actionListener="#{user.take}" />
+							    
+								</p:panelGrid>
+							</h:panelGroup>
+							</h:form>
+							<br/>
+							<br/>
+							<h:form enctype="multipart/form-data2" >
+							
+							<p:panelGrid columns="2"   style="margin: 0 auto">
+							 	<f:facet name="header">
+								<p:row>
+								<p:column colspan="7"><strong>Insurance Package</strong></p:column>   
+						        </p:row>			
+							</f:facet>
+							
+						      <h:outputText value="Insurance Type 1" />			
+								<h:graphicImage value="resources/images/moto.jpg"   style="width:100px; height:100px;"/>
+							  <h:outputText value="Insurance Type 2" />			
+								<h:graphicImage value="resources/images/doctor-icon.png"   style="width:100px; height:100px;"/>								
+							  <h:outputText value="Provider Company: " />
+							    <h:outputText value="CompanyB" />
+							 
+							   <h:outputText value="Best Bid: " />
+							    <h:outputText value="320" />
+							      <h:outputText value="Desicion: " />
+							   <p:commandButton styleClass="buttons buttons1"  value="DEAL!"  actionListener="#{user.take}" />
+						
+							</p:panelGrid>
+						
+						</h:form>
+					</p:tab>
+			</p:tabView>
+				<div class="footer">
+					<div class="copy">Copyright &copy; 2016 A&amp;I. All rights reserved. Design by <a href="#">CodeBros</a></div>
+					<div class="social_icons flt_rt"> 
+						<ul>
+							<li><a href="#"><img src="resources/images/fb_icon.png" width="24" height="24" alt="img" /> </a></li>
+							<li><a href="#"> <img src="resources/images/twiter_icon.png" width="24" height="24" alt="img" /></a></li>
+							<li><a href="#"><img src="resources/images/google_icon.png" width="26" height="26" alt="img" /></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</h:body>
+</html>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:h="http://java.sun.com/jsf/html"  
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+	  
+	<h:head>
+			<link rel="shortcut icon" type="image/x-icon" href="resources/images/logo2.jpg" />
+		    <title>Welcome to A&amp;I</title>
+			<link rel="stylesheet" href="resources/css/style.css" type="text/css" media="all" />
+			<script type="text/javascript">
+			function changeImg(who,flag) {
+			  if (flag) {
+				who.style.height='40px';  
+					who.style.width='40px';
+			  } else {
+				who.style.height='20px';  
+					who.style.width='20px';
+			  }
+			}
+		</script>
+	</h:head>
+	<h:body>
+	
+		<div class="wrapper"> 
+			<div class="container"> 
+				<div class="header">
+					<div class="logo">
+						<h1><a href="index.xhtml">Auction &amp; Insurance</a><span>Insure, to be sure!</span></h1>
+					</div>
+					<div class="header_nav" >
+						<ul>
+							<li><a href="index.xhtml"><img width="20" height="20" src="resources/images/home.png" onmouseover="changeImg(this,true);" onmouseout="changeImg(this,false);"  />Home</a></li>
+							<li><a href="#"><img width="20" height="20" src="resources/images/contactus.jpg" onmouseover="changeImg(this,true);" onmouseout="changeImg(this,false);"  />Contact Us</a></li>
+							<li><a href="#"><img width="20" height="20" src="resources/images/faq.jpg" onmouseover="changeImg(this,true);" onmouseout="changeImg(this,false);"  />FAQ</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="aboutusbox">
+					<div style="color: #67322C"><h2>ABOUT US</h2></div>
+						<p> We are three programmers on our undergraduate degree.</p>
+						<p>This website is about obtaining insurance at the lowest price. </p>
+					</div>
+				<div class="footer">
+					<div class="copy">Copyright &copy; 2016 A&amp;I. All rights reserved. Design by <a href="#">CodeBros</a></div>
+						<div class="social_icons flt_rt"> 
+						 <ul>
+							<li><a href="#"><img src="resources/images/fb_icon.png" width="24" height="24" alt="img" /> </a></li>
+							<li><a href="#"> <img src="resources/images/twiter_icon.png" width="24" height="24" alt="img" /></a></li>
+							<li><a href="#"><img src="resources/images/google_icon.png" width="26" height="26" alt="img" /></a></li>
+						  </ul>
+						</div>
+				 </div>
+			</div>
+		</div>
+	</h:body>
+</html>

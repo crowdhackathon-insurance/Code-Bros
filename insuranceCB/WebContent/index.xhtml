@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"  
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+      
+       
+<h:head>
+	<link rel="shortcut icon" type="image/x-icon" href="resources/images/logo2.jpg" />
+    <title>Welcome to A&amp;I</title>
+	<link rel="stylesheet" href="resources/css/style.css" type="text/css" media="all" />
+	<script type="text/javascript">
+		function changeImg(who,flag) {
+		  if (flag) {
+			who.style.height='40px';  
+				who.style.width='40px';
+		  } else {
+			who.style.height='20px';  
+				who.style.width='20px';
+		  }
+		}
+	</script>
+	</h:head>
+	<h:body>
+		<div class="wrapper"> 
+			<div class="container">
+				<div class="header">
+					<div class="logo">
+						<h1><a href="index.xhtml">Auction &amp; Insurance</a><span>Insure, to be sure!</span></h1>
+					</div>
+					<div class="header_nav" >
+						<ul>
+						  <li><a href="home.xhtml"><h:graphicImage width="20" height="20" value="resources/images/home.png" onmouseover="changeImg(this,true);" onmouseout="changeImg(this,false);"  />Home</a></li>
+						  <li><a href="register.xhtml"><img width="20" height="20" src="resources/images/register.png" onmouseover="changeImg(this,true)" onmouseout="changeImg(this,false)"  />Register</a></li>
+						  <li><a href="aboutus.xhtml"><img width="20" height="20" src="resources/images/aboutus.jpg" onmouseover="changeImg(this,true)" onmouseout="changeImg(this,false)"  />AboutUs</a></li>
+						  <li><a href="#"><img width="20" height="20" src="resources/images/contactus.jpg" onmouseover="changeImg(this,true);" onmouseout="changeImg(this,false);"  />Contact Us</a></li>
+						  <li><a href="#"><img width="20" height="20" src="resources/images/faq.jpg" onmouseover="changeImg(this,true);" onmouseout="changeImg(this,false);"  />FAQ</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="banner"> 
+					<h:graphicImage width="580" height="332"  value="resources/images/banner.jpg" alt="banner" />
+				</div>
+				<div id="rcornersb"><div style="color: #67322C"><h2>LOG IN</h2><br/><br/></div>
+					<h:form>
+						<table>
+							<tr><td><div style="color: #67322C">Name:</div></td>
+							<td><p:inputText id="usr" label="Username" value="#{user.username}"  required="true" type="text" /></td>
+							</tr><tr>
+							<td><div style="color: #67322C">Password:</div></td>
+							<td><p:password id="pwd" label="Password" value="#{user.password}" required="true"  /> </td>
+							</tr>
+						</table>
+						<p><h:commandButton class="buttons buttons1" value="Login" action="#{user.login}" ></h:commandButton>
+						<h:commandButton class="buttonr buttonr1" value="Reset" type="reset" > <f:ajax render="@form"/> </h:commandButton></p>  
+						<p><a href="#" >Forgot password?</a></p>
+					</h:form>
+				</div>
+				<div class="footer">
+					<div class="copy">Copyright &copy; 2016 A&amp;I. All rights reserved. Design by <a href="#">CodeBros</a></div>
+					<div class="social_icons flt_rt"> 
+						<ul>
+							<li><a href="#"><img src="resources/images/fb_icon.png" width="24" height="24" alt="img" /> </a></li>
+							<li><a href="#"> <img src="resources/images/twiter_icon.png" width="24" height="24" alt="img" /></a></li>
+							<li><a href="#"><img src="resources/images/google_icon.png" width="26" height="26" alt="img" /></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</h:body>
+</html>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"  
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+      
+       
+	<h:head>
+			<link rel="shortcut icon" type="image/x-icon" href="resources/images/logo2.jpg" />
+		    <title>Welcome to A&amp;I</title>
+			<link rel="stylesheet" href="resources/css/style.css" type="text/css" media="all" />
+			<script type="text/javascript">
+			function changeImg(who,flag) {
+			  if (flag) {
+				who.style.height='40px';  
+					who.style.width='40px';
+			  } else {
+				who.style.height='20px';  
+					who.style.width='20px';
+			  }
+			}
+		</script>
+	</h:head>
+	<h:body>
+		
+		<div class="wrapper"> 
+			<div class="container"> 
+				<div class="header">
+					<div class="logo">
+						<h1><a href="index.xhtml">Auction &amp; Insurance</a><span>Insure, to be sure!</span></h1>
+					</div>
+					<div class="header_nav" >
+						<ul>
+							<li><a href="home.xhtml"><img width="20" height="20" src="resources/images/home.png" onmouseover="changeImg(this,true);" onmouseout="changeImg(this,false);"  />Home</a></li>							<li><a href="aboutus.xhtml"><img width="20" height="20" src="resources/images/aboutus.jpg" onmouseover="changeImg(this,true)" onmouseout="changeImg(this,false)"  />AboutUs</a></li>
+							<li><a href="#"><img width="20" height="20" src="resources/images/contactus.jpg" onmouseover="changeImg(this,true);" onmouseout="changeImg(this,false);"  />Contact Us</a></li>
+							<li><a href="#"><img width="20" height="20" src="resources/images/faq.jpg" onmouseover="changeImg(this,true);" onmouseout="changeImg(this,false);"  />FAQ</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="banner"> 
+					<div id="registerbox">
+						<div style="color: #67322C">
+							<h2>Register</h2><br/><br/>
+						</div>
+						<h:form>
+							<table>
+								<tr><td>Username:</td>
+									<td> <p:inputText id="usr" label="username" value="#{user.username}"  required="true" type="text" placeholder="">
+											<f:validateLength minimum="5" maximum="15" /> 
+										</p:inputText>
+									</td>
+								</tr>
+								<tr><td>Password:</td>
+									<td><p:password id="pwd1" label="password" value="#{user.password}"  required="true"  placeholder="" > 
+											<f:validateLength maximum="30" minimum="8"/> 
+										</p:password>
+									</td>
+								</tr>
+								<tr><td>Confirm Password:</td>
+									<td><p:password id="pwd2" label="confirm password" value="#{user.confpass}"  required="true"  placeholder="" /> </td>
+								</tr>
+								<tr><td>E-mail:</td>
+									<td> <p:inputText  required="true" label="Email" value="#{user.email}"  validatorMessage="Invalid email format" placeholder="e.g. what@whot.com"> 
+											<f:validateRegex pattern="^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$" />
+										</p:inputText>
+									</td>
+								</tr>
+							</table>
+							<p><h:commandButton class="buttons buttons1" value="Register" action="#{user.register}"></h:commandButton> 
+							<p:commandButton  value="Reset" type="reset" > <f:ajax render="@form"/> </p:commandButton></p>
+						</h:form>	
+					</div>     
+				</div>
+				
+				<div class="footer">
+					<div class="copy">Copyright &copy; 2016 A&amp;I. All rights reserved. Design by <a href="#">CodeBros</a></div>
+						<div class="social_icons flt_rt"> 
+						 <ul>
+							
+							<li><a href="#"><img src="resources/images/fb_icon.png" width="24" height="24" alt="img" /> </a></li>
+							<li><a href="#"> <img src="resources/images/twiter_icon.png" width="24" height="24" alt="img" /></a></li>
+							<li><a href="#"><img src="resources/images/google_icon.png" width="26" height="26" alt="img" /></a></li>
+						  </ul>
+						</div>
+				 </div>
+			</div>
+		</div>
+	</h:body>
+</html>

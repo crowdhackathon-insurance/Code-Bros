@@ -1,0 +1,542 @@
+/*======================================css is here ========================================*/
+
+/*message notification*/
+.button__badge {
+  background-color: #fa3e3e;
+  border-radius: 2px;
+  color: white;
+ 
+ /* padding: 1px 3px;
+  font-size: 10px;
+  
+  position: absolute; */
+  top: 0;
+  right: 0;
+}
+
+
+.clear {
+	clear: both;
+	font-size: 0px;
+	line-height: 0px;
+	display: block;
+}
+.error {
+   color: red;
+}
+
+.last {
+	margin: 0 !important;
+}
+.pad_last {
+	padding: 0 !important;
+}
+.no_bg {
+	background: none !important;
+}
+img {
+	border: none;
+}
+/**************************************************************************************/
+a {
+	color: #0000FF;
+	text-decoration: none;
+	outline: 0 none;
+}
+a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+a:active {
+	background: none !important;
+}
+h1 {
+	font-size: 24px;
+}
+h2 {
+	font-size: 22px;
+}
+h3 {
+	font-size: 18px;
+}
+h4 {
+	font-size: 16px;
+}
+h5 {
+	font-size: 14px;
+}
+h6 {
+	font-size: 12px;
+}
+/*----------------------------------------------------------------------------------*/
+html {
+}
+body {
+	font-family: "Arial", Verdana, Tahoma;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+	background-color: #f5f5f5;
+}
+.flt_Lt {
+	float: left;
+	display: inline;
+}
+.flt_Rt {
+	float: right;
+	display: inline;
+}
+/* ---------------------------------------------------------------------------------*/
+
+
+/* ----------------------- layout ----------*/
+.wrapper {
+	margin: 0 auto;
+	background: url(../images/wrapper_bg.png) repeat-x top center;
+	min-width: 980px;
+}
+.container {
+	width: 980px;
+	margin: 0 auto;
+	border-top: 0 none;
+}
+/*-------------------------------------------*/
+
+/* ------------------ HEADER HERE -------------------*/
+.header {
+	margin: 0 auto;
+	padding: 0;
+	width: 960px;
+	display: inline-block;
+}
+.logo {
+	margin-top: 37px;
+	margin-right: 0;
+	margin-left: 55px;
+	margin-bottom: 0;
+	padding: 0;
+	width: 170px;
+	display: block;
+}
+.logo h1 {
+	display: block;
+	margin: 0;
+	padding: 0;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 40px;
+	color: #333333;
+	font-weight: bold;
+}
+.logo h1 a {
+	display: block;
+	margin: 0;
+	padding: 0;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 40px;
+	color: #333333;
+	font-weight: bold;
+}
+.logo h1 a:hover {
+	text-decoration: none;
+}
+.logo span {
+	display: block;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #555555;
+	font-weight: normal;
+	font-style: italic;
+	text-align: right;
+}
+/* ---------------------------------------------------------*/
+
+.infouser {
+  background: white;
+  border-radius: 25px;
+  border: 3px solid #67322C;
+  width: 600px;
+  text-align: center;
+  margin-top: 5px;
+  margin-left: 220px;
+}
+
+/* ------------------------- NAVIGATION HERE ---------------*/
+.header_nav {
+	float: right;
+	padding: 0;
+	width: 698px;
+	margin: 26px 0 16px 0;
+	display: inline-block;
+}
+.header_nav ul {
+	float: left;
+	display: inline-block;
+	margin: 0;
+	padding: 0 0 0 0;
+}
+.header_nav ul li {
+	float: left;
+	display: inline-block;
+	margin: 0 30px 0 0;
+}
+.header_nav ul li a {
+	display: inline-block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #333333;
+	font-weight: normal;
+	padding: 0;
+	margin: 0;
+}
+.banner {
+	margin: 0px;
+	padding: 0px;
+
+       
+       
+}
+.banner img {
+	margin: 0px;
+	padding: 0px;
+	border-radius: 25px;
+	border: 3px solid #67322C;
+}
+
+/*log in box*/
+#rcornersb {
+	background: white;
+    border-radius: 25px;
+    border: 3px solid #67322C;
+    padding: 20px;
+    width: 300px;
+    /*height: 315px;*/
+    position:inherit;
+	float:right;
+	margin: -340px 0px 0px 0px;
+	text-align: center;
+}
+/*register box*/
+#registerbox {
+	background: white;
+    border-radius: 25px;
+    border: 3px solid #67322C;
+    width: 300px;
+  	position:relative;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	margin-top: 5px;
+	margin-left: -200px;
+	
+}
+
+.aboutusbox {
+  background: white;
+  border-radius: 25px;
+  border: 3px solid #67322C;
+  width: 600px;
+  text-align: center;
+  margin-top: 5px;
+  margin-left: 120px;
+}
+
+/* ---------------------BUTTONS------------------------------------*/
+.buttonr {
+    background-color: #67322C;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 6px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; / Safari /
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.buttonr1 {
+    background-color: white; 
+    color: #67322C; 
+    border: 2px solid #67322C;
+}
+
+.buttonr1:hover {
+    background-color: #67322C;
+    color: white;
+}
+.buttonr1:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.buttons {
+    background-color: #67322C;
+    border-radius: 10px;
+    border: none;
+    color: #67322C;
+    padding: 6px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; / Safari /
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.buttons1 {
+    background-color: #67322C; 
+    color: white; 
+    border: 2px solid #67322C;
+}
+
+.buttons1:hover {
+    background-color: white;
+    color: #67322C;
+}
+
+
+.buttons1:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+/* ---------------------------------------------------------*/
+
+/* ------------------------ MIAN CONTENT HERE --------------*/
+.main_content {
+	margin: 0;
+	padding: 0;
+	width: 980px;
+	background-color: #ffffff;
+}
+.left_cont {
+	margin: 0 0 0 20px;
+	padding: 0;
+	float: left;
+	width: 650px;
+}
+.content1 {
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 650px;
+}
+.content1 h2 {
+	margin: 30px 0 0 0;
+	padding: 0;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	color: #333333;
+}
+.content1 p {
+	width: 613px;
+	margin: 25px 0 0 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #666666;
+	line-height: 20px;
+}
+.content1 p a {
+	font-size: 12px;
+	text-align: center;
+	color: #639ed8;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+	margin: 0;
+	padding: 0;
+}
+.content1 p a:hover {
+	color: #000000;
+}
+.content2 {
+	margin: 38px 0 0 0;
+	padding: 0;
+	width: 650px;
+	float: left;
+	background: url(../images/cont2_bg.png) repeat-x top left;
+}
+
+.content2 a {
+	font-size: 12px;
+	text-align: center;
+	color: #639ed8;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+	margin: 25px 0 0px 0;
+	padding: 0;
+}
+.content2 a:hover {
+	color: #000000;
+}
+.right_cont {
+	margin: 0 38px 0 0;
+	padding: 0;
+	float: right;
+	width: 249px;
+}
+.right_cont h2 {
+	margin: 30px 0 0 0;
+	padding: 0;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	color: #333333;
+}
+
+/* ---------------------------------------------------------*/
+
+
+/* ------------------ FOOTER HERE --------------------------*/
+.footer {
+	margin: 37px 0px 0 20px;
+	padding: 0;
+	width: 940px;
+	border-top: 2px solid #ebeceb;
+	float: left;
+}
+.copy {
+	float: left;
+	margin: 45px 0 40px 0;
+	padding: 0;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+}
+.copy a {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	color: blue;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+}
+.social_icons {
+	margin: 45px 40px 0 0;
+	padding: 0;
+	float: right;
+}
+.social_icons ul {
+	padding: 0;
+	margin: 0;
+}
+.social_icons ul li {
+	float: left;
+	display: inline-block;
+}
+.social_icons ul li a {
+	margin: 0 0px 0 12px;
+}
+/* ---------------------------------------------------------*/
+
+#fdw-pricing-table {
+		margin:0 auto;
+		text-align: center;
+		width: 928px; /* total computed width */
+		zoom: 1;
+	}
+
+	#fdw-pricing-table:before, #fdw-pricing-table:after {
+	  content: "";
+	  display: table
+	}
+
+	#fdw-pricing-table:after {
+	  clear: both
+	}
+
+	/* --------------- */	
+
+	#fdw-pricing-table .plan {
+		font: 13px 'Lucida Sans', 'trebuchet MS', Arial, Helvetica;     
+		background: #fff;      
+		border: 1px solid #ddd;
+		color: #333;
+		padding: 20px;
+		
+		/*width: 180px;*/
+		width: 300px;
+		
+		float: left;
+		_display: inline; /* IE6 double margin fix */
+		position: relative;
+		margin: 0 5px;
+		-moz-box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
+		-webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
+		box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);		
+	}
+
+	#fdw-pricing-table .plan:after {
+	  z-index: -1; 
+	  position: absolute; 
+	  content: "";
+	  bottom: 10px;
+	  right: 4px;
+	  width: 80%; 
+	  top: 80%; 
+	  -webkit-box-shadow: 0 12px 5px rgba(0, 0, 0, .3);   
+	  -moz-box-shadow: 0 12px 5px rgba(0, 0, 0, .3);
+	  box-shadow: 0 12px 5px rgba(0, 0, 0, .3);
+	  -webkit-transform: rotate(3deg);    
+	  -moz-transform: rotate(3deg);   
+	  -o-transform: rotate(3deg);
+	  -ms-transform: rotate(3deg);
+	  transform: rotate(3deg);	
+	}	
+	
+	/* --------------- */	
+
+	#fdw-pricing-table .header1 {
+		position: relative;
+		font-size: 20px;
+		font-weight: normal;
+		text-transform: uppercase;
+		padding: 40px;
+		margin: -20px -20px 20px -20px;
+		border-bottom: 8px solid;
+		background-color: #eee;
+		background-image: -moz-linear-gradient(#fff,#eee);
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));    
+		background-image: -webkit-linear-gradient(#fff, #eee);
+		background-image: -o-linear-gradient(#fff, #eee);
+		background-image: -ms-linear-gradient(#fff, #eee);
+		background-image: linear-gradient(#fff, #eee);
+	}
+
+	#fdw-pricing-table .header1:after {
+		position: absolute;
+		bottom: -8px; left: 0;
+		height: 3px; width: 100%;
+		content: '';
+		background-image: url(images/bar.png);
+	}
+
+	#fdw-pricing-table .header1{
+		border-bottom-color: #67322C;
+	}
+	
+	
+	/* --------------- */
+
+	#fdw-pricing-table ul {
+		margin: 20px 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	#fdw-pricing-table li {
+		padding: 10px 0;
+	}
+	
+
+	
